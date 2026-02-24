@@ -20,20 +20,53 @@
     <section class="card">
       <h2>Volatility</h2>
       <p>
-        Volatility measures how widely returns fluctuate. Higher volatility means larger swings up and down.
+        Volatility measures how widely returns fluctuate around their average return.
+      </p>
+      <p><span class="kpi">Simple calculation flow:</span></p>
+      <ul>
+        <li>Collect periodic returns (for example monthly).</li>
+        <li>Compute the average return.</li>
+        <li>Compute the standard deviation of returns.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Volatility Example</h2>
+      <p>Monthly returns: 2%, -1%, 3%, 0%, 1%, -2%</p>
+      <ul>
+        <li>Average monthly return ≈ <strong>0.5%</strong></li>
+        <li>Monthly volatility (std. dev.) ≈ <strong>1.87%</strong></li>
+        <li>Annualized volatility ≈ 1.87% × √12 ≈ <strong>6.48%</strong></li>
+      </ul>
+      <p>
+        Higher volatility means larger expected swings in returns.
       </p>
     </section>
 
     <section class="card">
       <h2>Beta</h2>
       <p>
-        Beta measures sensitivity to market moves:
+        Beta measures sensitivity to market moves.
       </p>
+      <p><span class="kpi">Formula:</span> Beta = Covariance(Stock, Market) / Variance(Market)</p>
       <ul>
         <li>Beta ≈ 1: moves with the market</li>
         <li>Beta &gt; 1: more sensitive than the market</li>
         <li>Beta &lt; 1: less sensitive than the market</li>
       </ul>
+    </section>
+
+    <section class="card">
+      <h2>Beta Example</h2>
+      <p>Suppose:</p>
+      <ul>
+        <li>Covariance(stock, market) = <strong>0.0036</strong></li>
+        <li>Variance(market) = <strong>0.0024</strong></li>
+      </ul>
+      <p><span class="kpi">Step:</span> Beta = 0.0036 / 0.0024 = <strong>1.5</strong></p>
+      <p>
+        Interpretation: if the market moves +1%, the stock is expected to move about +1.5% on average (and similarly on downside moves).
+      </p>
     </section>
   </main>
 
